@@ -1,7 +1,6 @@
-import MainPage from "./ui/pages/MainPage";
-
+import TodoApp from "./ui/pages/TodoApp";
 function App() {
-  return <MainPage />;
+  return <TodoApp />;
 }
 
 export default App;
