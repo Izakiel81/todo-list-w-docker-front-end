@@ -1,0 +1,38 @@
+ .todo_input {
+   display: flex;
+   gap: 0.5rem;
+   margin-bottom: 1.5rem;
+ }
+
+ .todo_input__field {
+   flex: 1;
+   padding: 0.75rem 1rem;
+   border: 1px solid #d1d5db;
+   border-radius: 0.5rem;
+   font-size: 1rem;
+   outline: none;
+   transition: all 0.2s;
+ }
+
+ .todo_input__field:focus {
+   border-color: #3b82f6;
+   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+ }
+
+ .todo_input__button {
+   background: #3b82f6;
+   color: white;
+   padding: 0.75rem 1.5rem;
+   border: none;
+   border-radius: 0.5rem;
+   font-weight: 500;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   transition: background 0.2s;
+ }
+
+ .todo_input__button:hover {
+   background: #2563eb;
+ }

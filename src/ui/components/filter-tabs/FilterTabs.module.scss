@@ -1,0 +1,31 @@
+  .filter_tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .filter_tabs__button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: transparent;
+    color: #4b5563;
+    transition: all 0.2s;
+  }
+
+  .filter_tabs__button:hover {
+    background: #f3f4f6;
+  }
+
+  .filter_tabs__button__active {
+    background: #3b82f6;
+    color: white;
+  }
+
+  .filter_tabs__button__active:hover {
+    background: #3b82f6;
+  }
