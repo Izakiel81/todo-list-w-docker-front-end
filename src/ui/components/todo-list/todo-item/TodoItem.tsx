@@ -1,9 +1,10 @@
+import type TODOItem from "../../../../interfces/TodoItem";
 import styles from "./TodoItem.module.scss";
 import { Trash2, Check } from "lucide-react";
 type Props = {
-  todos: Array<>;
-  onToggle: () => void;
-  onDelete: () => void;
+  todo: TODOItem;
+  onToggle: (id: number) => void;
+  onDelete: (id: number) => void;
 };
 const TodoItem = ({ todo, onToggle, onDelete }: Props) => {
   return (

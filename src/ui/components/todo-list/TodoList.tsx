@@ -1,16 +1,17 @@
+import type TODOItem from "../../../interfces/TodoItem";
 import styles from "./TodoList.module.scss";
 import TodoItem from "./todo-item/TodoItem";
 type Props = {
-  todos: Array<>;
+  todos: Array<TODOItem>;
   onToggle: () => void;
   onDelete: () => void;
 };
 const TodoList = ({ todos, onToggle, onDelete }: Props) => {
   if (todos.length === 0) {
     return (
-      <div style={styles.todoList__empty}>
-        <p style={styles.todoList__emptyTitle}>No tasks found</p>
-        <p style={styles.todoList__emptySubtitle}>
+      <div className={styles.todoList__empty}>
+        <p className={styles.todoList__emptyTitle}>No tasks found</p>
+        <p className={styles.todoList__emptySubtitle}>
           Add a new task to get started!
         </p>
       </div>
@@ -18,8 +19,8 @@ const TodoList = ({ todos, onToggle, onDelete }: Props) => {
   }
 
   return (
-    <div style={styles.todoList}>
-      {todos.map((todo: Todo) => (
+    <div className={styles.todoList}>
+      {todos.map((todo: TODOItem) => (
         <TodoItem
           key={todo.id}
           todo={todo}
