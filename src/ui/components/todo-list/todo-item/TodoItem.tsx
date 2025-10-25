@@ -13,7 +13,7 @@ const TodoItem = ({ todo, onToggle, onDelete }: Props) => {
         onClick={() => onToggle(todo.id)}
         className={`${styles.todo_item__checkbox} ${
           todo.completed ? styles.todo_item__checkbox__checked : ""
-        }}`}
+        }`}
       >
         {todo.completed && (
           <Check size={16} className={styles.todo_item__check_icon} />
