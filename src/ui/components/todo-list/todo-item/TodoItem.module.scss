@@ -1,4 +1,4 @@
-.todo-item {
+.todo_item {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -6,66 +6,66 @@
   background: #f9fafb;
   border-radius: 0.5rem;
   transition: background 0.2s;
+}
 
-  &:hover {
-    background: #f3f4f6;
+.todo_item:hover {
+  background: #f3f4f6;
+}
 
-    .todo-item__delete {
-      opacity: 1;
-    }
-  }
+.todo_item:hover .todo_item__delete {
+  opacity: 1;
+}
 
-  &__checkbox {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 2px solid #d1d5db;
-    border-radius: 50%;
-    background: transparent;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-    padding: 0;
+.todo_item__checkbox {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #d1d5db;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  padding: 0;
+}
 
-    &:hover {
-      border-color: #3b82f6;
-    }
+.todo_item__checkbox:hover {
+  border-color: #3b82f6;
+}
 
-    &--checked {
-      background: #10b981;
-      border-color: #10b981;
-    }
-  }
+.todo_item__checkbox__checked {
+  background: #10b981;
+  border-color: #10b981;
+}
 
-  &__check-icon {
-    color: white;
-  }
+.todo_item__check_icon {
+  color: white;
+}
 
-  &__text {
-    flex: 1;
-    color: #374151;
+.todo_item__text {
+  flex: 1;
+  color: #374151;
+}
 
-    &--completed {
-      text-decoration: line-through;
-      color: #9ca3af;
-    }
-  }
+.todo_item__text__completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
 
-  &__delete {
-    color: #9ca3af;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.25rem;
-    display: flex;
-    align-items: center;
-    opacity: 0;
-    transition: all 0.2s;
+.todo_item__delete {
+  color: #9ca3af;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.2s;
+}
 
-    &:hover {
-      color: #ef4444;
-    }
-  }
+.todo_item__delete:hover {
+  color: #ef4444;
 }

@@ -1,22 +1,32 @@
-const TodoItem = ({ todo, onToggle, onDelete }) => {
+import styles from "./TodoItem.module.scss";
+import { Trash2, Check } from "lucide-react";
+type Props = {
+  todos: Array<>;
+  onToggle: () => void;
+  onDelete: () => void;
+};
+const TodoItem = ({ todo, onToggle, onDelete }: Props) => {
   return (
-    <div className="todo-item">
+    <div className={styles.todo_item}>
       <button
         onClick={() => onToggle(todo.id)}
-        className={`todo-item__checkbox ${
-          todo.completed ? "todo-item__checkbox--checked" : ""
-        }`}
+        className={`${styles.todo_item__checkbox} ${
+          todo.completed ? styles.todo_item__checkbox__checked : ""
+        }}`}
       >
         {todo.completed && (
-          <Check size={16} className="todo-item__check-icon" />
+          <Check size={16} className={styles.todo_item__check_icon} />
         )}
       </button>
       <span
-        className={`todo-item__text ${todo.completed ? "todo-item__text--completed" : ""}`}
+        className={`${styles.todo_item__text} ${todo.completed ? styles.todo_item__text__completed : ""}`}
       >
         {todo.text}
       </span>
-      <button onClick={() => onDelete(todo.id)} className="todo-item__delete">
+      <button
+        onClick={() => onDelete(todo.id)}
+        className={styles.todo_item__delete}
+      >
         <Trash2 size={18} />
       </button>
     </div>

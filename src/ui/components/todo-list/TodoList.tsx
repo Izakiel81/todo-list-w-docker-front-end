@@ -1,4 +1,5 @@
 import styles from "./TodoList.module.scss";
+import TodoItem from "./todo-item/TodoItem";
 type Props = {
   todos: Array<>;
   onToggle: () => void;
@@ -18,7 +19,7 @@ const TodoList = ({ todos, onToggle, onDelete }: Props) => {
 
   return (
     <div style={styles.todoList}>
-      {todos.map((todo) => (
+      {todos.map((todo: Todo) => (
         <TodoItem
           key={todo.id}
           todo={todo}
