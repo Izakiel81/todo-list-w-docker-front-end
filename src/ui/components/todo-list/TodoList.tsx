@@ -3,8 +3,8 @@ import styles from "./TodoList.module.scss";
 import TodoItem from "./todo-item/TodoItem";
 type Props = {
   todos: Array<TODOItem>;
-  onToggle: () => void;
-  onDelete: () => void;
+  onToggle: (id: number) => void;
+  onDelete: (id: number) => void;
 };
 const TodoList = ({ todos, onToggle, onDelete }: Props) => {
   if (todos.length === 0) {
