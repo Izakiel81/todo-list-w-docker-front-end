@@ -1,0 +1,18 @@
+todoList {
+  display: "flex";
+  flex-direction: "column";
+  gap: "0.5rem";
+}
+todoList__empty {
+  padding: "3rem 0";
+  text-align: "center";
+  color: "#9ca3af";
+}
+todoList__emptyTitle {
+  margin: 0;
+  font-size: "1.125rem";
+}
+todoList__emptySubtitle {
+  font-size: "0.875rem";
+  margin: "0.25rem 0 0 0";
+}

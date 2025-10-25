@@ -1,7 +1,7 @@
-import "./App.css";
+import MainPage from "./ui/pages/MainPage";
 
 function App() {
-  return (<>ARSE</>);
+  return <MainPage />;
 }
 
 export default App;
